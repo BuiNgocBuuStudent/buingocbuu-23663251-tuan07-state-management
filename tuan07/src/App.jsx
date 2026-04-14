@@ -1,18 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import "./App.css";
 import ComponentA from "./components/ComponentA";
 import ComponentB from "./components/ComponentB";
 import ChangeTheme from "./components/ChangeTheme";
+import Navbar from "./components/Navbar";
+import LoginForm from "./components/LoginForm";
+import UserInfo from "./components/UserInfo";
 
 function App() {
   return (
     <>
+      <Navbar />
+
       <ComponentA />
       <ComponentB />
       <ChangeTheme />
+
+      <LoginForm />
+      <UserInfo />
     </>
   );
 }
